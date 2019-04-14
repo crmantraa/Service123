@@ -19,7 +19,7 @@ trigger SRV_CaseTrigger on Case (before insert, before Update, after insert, aft
                 }
                 ///Create Recurring Cases 
                 SRV_CaseHandler.CreateRecurringCases(trigger.new,trigger.oldmap);
-                SRV_CaseHandler.capture_Timezone_Service_Event(trigger.new);
+                //SRV_CaseHandler.capture_Timezone_Service_Event(trigger.new);
                 
             }
             
